@@ -1,0 +1,76 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  } 
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  nav {
+    width: 100%;
+    background-color: #986C6A;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    display: inline-block;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-item a {
+    display: inline-block; 
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+  
+  .nav-item:hover {
+    background-color: #B399A2;
+  }
+  
+  .nav-item:hover a {
+    color: #45281e;
+  }
+  
+  .logo img {
+    width: 175px;
+    vertical-align: middle;
+  }
+
+  /* Oppgave 2*/
+
+  hr {
+ border-top: 10px thick;
+ border-bottom: none;
+color: #45281e;
+}
+
+#form {
+    width: 500px;
+    border: none;
+    display: inline-flex;
+    align-self: center;
+  }
+
+
+
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
