@@ -1,0 +1,21 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  } 
+
+hr {
+    border-top: 10px thick;
+    border-bottom: none;
+   color: #45281e;
+   }
+   
+   #form {
+       width: 500px;
+       border: none;
+       display: inline-flex;
+       align-self: center;
+     }
+   
+   
+   

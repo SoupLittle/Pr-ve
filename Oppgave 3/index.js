@@ -1,27 +1,3 @@
-// Oppgave 2
-
-var num1 = parseFloat(document.getElementById('twentyTwenty').value);
-var num2 = parseFloat(document.getElementById('twentyOne').value);
-var num3 = parseFloat(document.getElementById('twentyTwo').value);
-
-function print() {
-    var largest = Math.max(num1, num2, num3);
-
-    var year = (largest == num1) ? '2020' : ((largest == num2) ? '2021' : ((largest == num3) ? '2022' : ''));
-
-    if (year == '2020') {
-        document.getElementById("ans").innerHTML = "I 2020 var det " + largest + " projects";
-    } else if (year == '2021') {
-        document.getElementById("ans").innerHTML = "I 2021 var det " + largest + " projects";
-    } else {
-        document.getElementById("ans").innerHTML = "I 2022 var det " + largest + " projects";
-    }
-}
-
-
-// Jeg gir opp, koden skriver bare NaN
-
-
 
 
 // Oppgave 3
@@ -80,7 +56,7 @@ var personer = [
         document.body.appendChild(divcontainer)
 
         img = document.createElement('img')
-        img.src = runar.avatar1
+        img.src = runar.bilder.avatar1
         divcontainer.appendChild(img)
 
         var divcontainer = document.createElement("div")
@@ -92,6 +68,8 @@ var personer = [
         divcontainer.appendChild(img)
     } 
 }
+
+// Denne får jeg ikke bildene til å funke på
 
 runarAvatar()
 
@@ -114,19 +92,4 @@ var sara = personer.find(personer => personer.navn === "Sara Wilsgaard")
 if (sara) {
     delete sara.telefonJobb
     console.log(sara)
-}
-
-//Oppgave 4
-
-
-
-let str = "Hva er bærekraftig utvikling? En utvikling som imøtekommer dagens behov uten å ødelegge muligheten for at kommende generasjoner skal få dekket sine behov";
-let searchString = "bærekraftig";
-let Result = str.includes(searchString);
-
-
-if (Result === true) {
-    console.log("Texten har ordet <bærekraftig>, men ikke <bærekraft>")
-} else {
-    console.log("Texten har verken ordet <bærekraftig> eller <bærekraft>")
 }
